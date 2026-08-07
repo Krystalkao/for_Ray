@@ -1,1 +1,126 @@
+<!DOCTYPE html>
 
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>For Ray's 24th Birthday</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            background: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            margin-top: 120px;
+        }
+
+        input {
+            padding: 12px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #birthdayPage {
+            display: none;
+        }
+
+        #error {
+            color: #aaa;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<div id="loginPage" class="container">
+
+    <h1>For Ray's 24th Birthday</h1>
+
+    <p>ENTER SECURITY CODE</p>
+
+    <input
+        type="password"
+        id="password"
+        placeholder="••••">
+
+    <br>
+
+    <button onclick="unlock()">
+        UNLOCK
+    </button>
+
+    <p id="error"></p>
+
+</div>
+
+
+
+<div id="birthdayPage" class="container">
+
+    <h1>ACCESS GRANTED ♡</h1>
+
+    <h2>Happy Birthday 🎂</h2>
+
+    <p>
+        恭喜你成功解鎖這張生日卡！
+    </p>
+
+    <p>
+        接下來這裡就可以放照片、
+        生日祝福、影片和我們的回憶。
+    </p>
+
+</div>
+
+
+
+<script>
+
+function unlock() {
+
+    const password =
+        document.getElementById("password").value;
+
+    if (password === "0807") {
+
+        document.getElementById("loginPage").style.display =
+        "none";
+
+        document.getElementById("birthdayPage").style.display =
+        "block";
+
+    } else {
+
+        document.getElementById("error").innerText =
+        "ACCESS DENIED";
+
+    }
+
+}
+
+</script>
+
+
+</body>
+
+</html>
