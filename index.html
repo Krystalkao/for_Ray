@@ -33,9 +33,7 @@
         }
 
 
-        /* =========================
-           第一幕：Security Check
-        ========================== */
+
 
         #loginPage {
             min-height: 100vh;
@@ -313,12 +311,6 @@
 
 
 
-
-        /* =========================
-           SECURITY VERIFICATION
-           LEVEL 2
-        ========================== */
-
         #level2Page {
             display: none;
 
@@ -484,10 +476,6 @@
             margin-bottom: 14px;
         }
 
-
-        /* =========================
-           Level 2：每題 10 秒倒數
-        ========================== */
 
         .question-header-row {
             display: flex;
@@ -827,12 +815,6 @@
 
 
 
-        /* =========================
-           第四幕：Cardholder Benefits
-           Premium Wallet / Black Card
-           iPhone / Mobile First
-        ========================== */
-
         .benefits-entry-wrap {
             margin-top: 54px;
         }
@@ -950,10 +932,6 @@
 
 
 
-        /* -------------------------
-           Top Navigation
-        -------------------------- */
-
         .benefits-topbar {
             position: sticky;
 
@@ -1040,10 +1018,6 @@
 
 
 
-        /* -------------------------
-           Section Heading
-        -------------------------- */
-
         .benefits-eyebrow {
             color: #777;
 
@@ -1088,11 +1062,6 @@
             line-height: 1.75;
         }
 
-
-
-        /* -------------------------
-           Virtual Black Card
-        -------------------------- */
 
         .benefits-status-card {
             position: relative;
@@ -1313,9 +1282,7 @@
 
 
 
-        /* -------------------------
-           Benefits Group
-        -------------------------- */
+
 
         .benefits-section-label {
             margin:
@@ -1566,9 +1533,6 @@
 
 
 
-        /* -------------------------
-           Annual Fee / Footer
-        -------------------------- */
 
         .annual-fee-card {
             position: relative;
@@ -1705,11 +1669,6 @@
 
 
 
-        /* =========================
-           Final Privilege / Private Gift Access
-           Main Narrative Climax
-           iPhone / Mobile First
-        ========================== */
 
         .final-benefit-wrap {
             margin-top: 24px;
@@ -1942,11 +1901,6 @@
                 );
         }
 
-
-
-        /* -------------------------
-           Private Gift Access Full Screen
-        -------------------------- */
 
         #giftVaultPage {
             position: fixed;
@@ -2696,10 +2650,6 @@
         }
 
 
-        /* =========================
-           Hidden Easter Egg
-           iPhone / Mobile First
-        ========================== */
 
         .easter-zone {
             position: relative;
@@ -2965,7 +2915,7 @@
         }
 
 
-        /* tiny sparkles around the heart */
+
 
         .easter-sparkle {
             position: absolute;
@@ -3177,7 +3127,6 @@
         }
 
 
-        /* Secret Overlay */
 
         #secretOverlay {
             position: fixed;
@@ -3500,7 +3449,6 @@
 }
 
 
-/* 限制整個彩蛋彈窗高度 */
 
 .secret-card {
     max-height:
@@ -3524,7 +3472,7 @@
 }
 
 
-/* 照片區不要無限往下長 */
+
 
 .secret-photo-wrap {
     max-height: 40svh;
@@ -3535,7 +3483,7 @@
 }
 
 
-/* 有照片時置中 */
+
 
 .secret-photo-wrap.has-photo {
     display: flex;
@@ -3545,7 +3493,7 @@
 }
 
 
-/* 保持照片比例，不裁切 */
+
 
 .secret-photo {
     display: block;
@@ -3560,19 +3508,13 @@
 }
 
 
-/* 關閉按鈕 */
+
 
 .secret-close {
     margin-top: 18px;
 }
 
-/* =========================================================
-   Final Card + Ending
-   Added after Private Gift Access
-   Existing pages/styles remain unchanged
-========================================================= */
 
-/* Private Gift Access 成功後新增的主線按鈕 */
 
 .gift-final-card-button {
     width: 100%;
@@ -3618,10 +3560,6 @@
         rgba(212, 175, 55, 0.16);
 }
 
-
-/* -------------------------
-   Final Card Full Screen
--------------------------- */
 
 #finalCardPage {
     position: fixed;
@@ -4008,10 +3946,6 @@
         rgba(17, 17, 17, 0.055);
 }
 
-
-/* -------------------------
-   Ending Full Screen
--------------------------- */
 
 #endingPage {
     position: fixed;
@@ -4573,10 +4507,6 @@
 
 
 
-<!-- ========================================
-     第一幕：Security Check
-========================================= -->
-
 <section id="loginPage">
 
     <div class="security-card">
@@ -4671,10 +4601,6 @@
 
 
 
-
-<!-- ========================================
-     SECURITY VERIFICATION — LEVEL 2
-========================================= -->
 
 <section id="level2Page">
 
@@ -4871,9 +4797,6 @@
 </section>
 
 
-<!-- ========================================
-     第四幕：Cardholder Benefits
-========================================= -->
 
 <section id="benefitsPage">
 
@@ -5156,7 +5079,7 @@
         </div>
 
 
-        <!-- 年費 -->
+
 
         <div class="annual-fee-card">
 
@@ -5319,10 +5242,6 @@
 
 
 
-<!-- ========================================
-     Final Privilege — Private Gift Access
-     Main Narrative Climax
-========================================= -->
 
 <section
     id="giftVaultPage"
@@ -5551,10 +5470,6 @@
 
 
 
-<!-- ========================================
-     Final Card
-     Added after Private Gift Access
-========================================= -->
 
 <section
     id="finalCardPage"
@@ -5681,9 +5596,7 @@
 
 
 
-<!-- ========================================
-     Final Ending
-========================================= -->
+
 
 <section
     id="endingPage"
@@ -5776,9 +5689,6 @@
 </section>
 
 
-<!-- ========================================
-     Secret Easter Egg Overlay
-========================================= -->
 
 <div
     id="secretOverlay"
@@ -5823,14 +5733,7 @@
         </div>
 
 
-        <!--
-        如果之後要放黑歷史照片：
-        1. 把照片放進 GitHub 的 images 資料夾
-        2. 例如 images/secret.jpg
-        3. 把下方 secret-photo-wrap 的 class
-           改成 "secret-photo-wrap has-photo"
-        4. 把 src 改成你的照片路徑
-        -->
+
 
         <div class="secret-photo-wrap has-photo">
             <img
@@ -5862,9 +5765,6 @@
 
 const correctPassword = "910821";
 
-/* ========================================
-   LEVEL 2 問題設定
-========================================= */
 
 const level2Questions = [
 
@@ -5920,10 +5820,6 @@ let currentLevel2Question = 0;
 let level2Locked = false;
 
 
-/* ========================================
-   LEVEL 2 倒數計時設定
-========================================= */
-
 const QUESTION_TIME_LIMIT = 10;
 let questionTimerInterval = null;
 let questionDeadline = 0;
@@ -5932,9 +5828,7 @@ let questionDeadline = 0;
 
 
 
-/* ========================================
-   Unlock
-========================================= */
+
 
 function unlockCard() {
 
@@ -5966,9 +5860,7 @@ function unlockCard() {
 
 
 
-/* ========================================
-   驗證動畫
-========================================= */
+
 
 function startVerification() {
 
@@ -5979,7 +5871,7 @@ function startVerification() {
         document.getElementById("verificationPage");
 
 
-    /* 登入頁淡出 */
+
 
     loginPage.style.opacity = "0";
 
@@ -6011,9 +5903,7 @@ function startVerification() {
 
 
 
-/* ========================================
-   進度條
-========================================= */
+
 
 function runProgress() {
 
@@ -6093,9 +5983,6 @@ function runProgress() {
 
 
 
-/* ========================================
-   開啟 SECURITY VERIFICATION — LEVEL 2
-========================================= */
 
 function openLevel2Page() {
 
@@ -6141,11 +6028,6 @@ function openLevel2Page() {
 
 }
 
-
-
-/* ========================================
-   顯示題目
-========================================= */
 
 function renderLevel2Question() {
 
@@ -6252,10 +6134,6 @@ function renderLevel2Question() {
 }
 
 
-
-/* ========================================
-   LEVEL 2：啟動每題 10 秒倒數
-========================================= */
 
 function startQuestionTimer() {
 
@@ -6467,10 +6345,6 @@ function handleQuestionTimeout() {
 
 
 
-/* ========================================
-   選擇答案
-========================================= */
-
 function selectLevel2Answer(
     selectedIndex,
     selectedButton
@@ -6589,9 +6463,7 @@ function selectLevel2Answer(
 
 
 
-/* ========================================
-   更新 Level 2 進度
-========================================= */
+
 
 function updateLevel2Progress() {
 
@@ -6642,10 +6514,6 @@ function updateLevel2Progress() {
 
 
 
-/* ========================================
-   Level 2 全部完成
-========================================= */
-
 function finishLevel2() {
 
     clearQuestionTimer();
@@ -6691,9 +6559,6 @@ function finishLevel2() {
 
 
 
-/* ========================================
-   離開 Level 2
-========================================= */
 
 function leaveLevel2() {
 
@@ -6722,10 +6587,6 @@ function leaveLevel2() {
 }
 
 
-
-/* ========================================
-   開啟生日頁
-========================================= */
 
 function openBirthdayPage() {
 
@@ -6774,13 +6635,6 @@ function openBirthdayPage() {
 
 
 
-/* ========================================
-   開啟 Cardholder Benefits
-========================================= */
-
-/* ========================================
-   Final Privilege / Private Gift Access
-========================================= */
 
 const giftVaultCode = "305";
 
@@ -6804,11 +6658,7 @@ function openGiftVault() {
         "hidden";
 
 
-    /*
-       每次打開都先清掉錯誤訊息。
-       已解鎖過則維持 unlocked 狀態，
-       同一個瀏覽 session 不必再輸入一次。
-    */
+
 
     document.getElementById(
         "giftVaultError"
@@ -6913,10 +6763,6 @@ function verifyGiftVaultCode() {
             true;
 
 
-        /*
-           iPhone Safari 不支援 vibrate 時
-           會直接略過，不影響功能。
-        */
 
         if (
             navigator.vibrate
@@ -6989,7 +6835,7 @@ function showGiftVaultUnlocked() {
 
 
 
-/* iPhone 鍵盤按 Enter / Go 也可以驗證 */
+
 
 document
     .getElementById(
@@ -7015,10 +6861,6 @@ document
 
 
 
-
-/* ========================================
-   Final Card + Ending
-========================================= */
 
 function openFinalCard() {
 
@@ -7150,10 +6992,7 @@ function openEndingPage() {
                 0;
 
 
-            /*
-               先重置再啟動，確保每次進入 ending
-               動畫都能從頭播放。
-            */
+
 
             void endingPage.offsetWidth;
 
@@ -7180,10 +7019,7 @@ function openEndingPage() {
 }
 
 
-/* ========================================
-   Hidden Easter Egg
-   連點愛心 3 次解鎖
-========================================= */
+
 
 let easterTapCount = 0;
 
@@ -7232,7 +7068,7 @@ if (easterHeart) {
         "click",
         function () {
 
-            /* 已經解鎖過，再點一次可重新開啟 */
+
 
             if (easterUnlocked) {
 
@@ -7340,10 +7176,7 @@ if (easterHeart) {
                 );
 
 
-                /*
-                   如果超過 2.5 秒沒有繼續點，
-                   重新從 0 開始。
-                */
+
 
                 easterResetTimer =
                     setTimeout(
@@ -7424,10 +7257,6 @@ if (easterHeart) {
                 }
 
 
-                /*
-                   iPhone 有支援時給一個很輕的震動。
-                   Safari 不支援也不會影響功能。
-                */
 
                 if (
                     navigator.vibrate
@@ -7458,9 +7287,6 @@ if (easterHeart) {
 
 
 
-/* ========================================
-   開啟 Secret Overlay
-========================================= */
 
 function openSecretOverlay() {
 
@@ -7493,10 +7319,6 @@ function openSecretOverlay() {
 
 
 
-/* ========================================
-   關閉 Secret Overlay
-========================================= */
-
 function closeSecretOverlay() {
 
     const overlay =
@@ -7527,8 +7349,6 @@ function closeSecretOverlay() {
 
 
 
-/* 點 Overlay 外圍也可以關閉 */
-
 const secretOverlay =
     document.getElementById(
         "secretOverlay"
@@ -7557,11 +7377,6 @@ if (secretOverlay) {
 }
 
 
-
-/* ========================================
-   Benefits Accordion
-   同時間只展開一項
-========================================= */
 
 document
     .querySelectorAll(
@@ -7702,9 +7517,6 @@ function openBenefitsPage() {
 
 
 
-/* ========================================
-   返回 Birthday Card
-========================================= */
 
 function closeBenefitsPage() {
 
